@@ -12,3 +12,11 @@ detils for the way to create SR image.
 the way2 from :https://github.com/cszn/BSRGAN/tree/main/utils
 
 we changed code for direct create dataset for model train.easy to see...
+
+
+详细用法：
+方法1:我们需要在way1目录下，使用python test_ffhq_degradation_dataset.py 去运行脚本。
+运行这个脚本需要pip install gfpgan 这个库。安装这个库的时候可能会报错，如果安装失败可以参考这个博客：https://blog.csdn.net/qq_40962125/article/details/134374318?spm=1001.2014.3001.5502
+环境没有问题的话运行即可，way1是严格按照论文中的数据集生成方式做的。
+
+方法2:直接运行way2.py即可。
