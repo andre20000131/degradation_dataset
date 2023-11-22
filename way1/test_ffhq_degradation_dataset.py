@@ -2,13 +2,13 @@ import cv2
 import numpy as np
 import pytest
 import yaml
-
-from gfpgan.data.ffhq_degradation_dataset import FFHQDegradationDataset
+from FFHQDegradationDataset import FFHQDegradationDataset
+#from gfpgan.data.ffhq_degradation_dataset import FFHQDegradationDataset
 
 
 def test_ffhq_degradation_dataset():
 
-    with open('./data/test_ffhq_degradation_dataset.yml', mode='r') as f:
+    with open('./test_ffhq_degradation_dataset.yml', mode='r') as f:
         opt = yaml.load(f, Loader=yaml.FullLoader)
         #print(opt)
     dataset = FFHQDegradationDataset(opt)
